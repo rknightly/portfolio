@@ -2,9 +2,10 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Ryan Knightly | Developer', // e.g: 'Name | Developer'
+  title: 'Ryan Knightly | Developer Portfolio', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  description:
+    'I am a Computer Science student at Rice University. My software portfolio contains 16+ mobile applications, as well as several other data science and CS projects.', // e.g: Welcome to my website
 };
 
 // HERO DATA
@@ -12,18 +13,17 @@ export const heroData = {
   title: 'Hello, my name is',
   name: 'Ryan Knightly',
   subtitle: 'This is my software portfolio.',
-  cta: 'See more',
+  cta: 'More',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne:
-    'My interest in software started in 2015 when I made my first iOS game. Since then I have developed 16 mobile games with more than 70,000 downloads, along with an educational app called InvestorPrep and an air quality app called AirSafe.',
+  paragraphOne: 'I am a Computer Science student at Rice University.',
   paragraphTwo:
-    'I have written software for a variety of applications, from web-scraping and analyzing stock market data to controlling competition robots and autonomous drones.',
+    'I started my journey in software in 2015 when I made my first iOS game. Since then I have developed 16 mobile games with more than 70,000 downloads. I have also expanded my interests and developed software for a variety of purposes, from web-scraping and analyzing stock market data to controlling competition robots and autonomous drones.',
   paragraphThree:
-    'I am currently pursuing my interests and studying Computer Science at Rice University.',
+    'I am interested in opportunities in Software Engineering as well as Data Science.',
   resume: '', // if no resume, the button will not show up
 };
 
@@ -42,12 +42,25 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'flydrive.png',
-    title: 'Knighted Games',
-    info: 'I have written and published 14 different iOS applications as part of Knighted Games.',
-    info2: 'These apps together have more than 65,000 downloads; not bad for one developer.',
-    url: 'http://knightedgames.weebly.com/',
-    repo: '', // if no repo, the button will not show up
+    img: 'mnist.png',
+    title: 'Deep Learning with Python',
+    info:
+      'I performed experiments using Python and Keras regarding training sample size and the performance of classification deep neural networks. I specifically used the MNIST dataset of handwritten digits.',
+    info2:
+      'I used the results of these experiments in writing a paper about the importance of Big Data in the age of Machine Learning.',
+    url: '',
+    repo: 'https://github.com/rknightly/neural-mnist', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'futures.png',
+    title: 'Futures Market Behavior Analysis',
+    info:
+      'I worked with a team at the Rice Data Science club to extract meaning from a large dataset about the futures market (70,000 data points with 192 features each).',
+    info2:
+      'I focused on comparing the behavior of different market players within different commodity classes. We particularly focused on the impact of the 2008 recession on the different futures markets.',
+    url: '',
+    repo: 'https://github.com/gvacaliuc/thehotcommodity/blob/master/notebooks/ryan_k-eda.ipynb', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -78,6 +91,27 @@ export const projectsData = [
     info2: '​AirSafe brings live air quality data to Houston residents who need it the most.',
     url: 'https://airsafe-tfa.weebly.com/',
     repo: 'https://github.com/rknightly/airsafe-tfa', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'moody.png',
+    title: 'Moody Art Map',
+    info:
+      'I worked on a team at RiceApps to develop a mobile app to bring awareness to the public art at Rice.',
+    info2:
+      '​We used React Native and Expo to develop the app, and I focused on the Node Express backend and connected it to a content management system. I also created the map to display the art.',
+    url: '',
+    repo: 'https://github.com/rice-apps/moody', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'flydrive.png',
+    title: 'Knighted Games',
+    info: 'I have written and published 14 different iOS applications as part of Knighted Games.',
+    info2:
+      'I used both Xcode/Swift and Unity/C# for development. My games together have more than 65,000 downloads.',
+    url: 'http://knightedgames.weebly.com/',
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
