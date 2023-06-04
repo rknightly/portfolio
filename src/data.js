@@ -19,16 +19,76 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: 'I am a Computer Science student at Rice University.',
+  paragraphOne:
+    'Hi! I just graduated with honors from Rice University with a B.S. in Computer Science and am excited for the next chapter of my career.',
   paragraphTwo:
-    'I started my journey in software in 2015 when I made my first iOS game. Since then I have developed 16 mobile games with more than 70,000 downloads. I have also expanded my interests and developed software for a variety of purposes, from web-scraping and analyzing stock market data to controlling competition robots and autonomous drones.',
+    'I have had the pleasure of being a Software Engineer Intern at Amazon and a Computational Biology Intern at MD Anderson. I have also worked with several Rice-Apps teams to develop both mobile and web applications for the Houston community. I have also personally developed and published over 15 mobile apps that have collectively achieved more than 125,000 downloads.',
   paragraphThree:
-    'I am interested in opportunities in Software Engineering as well as Data Science.',
+    'I have accepted an offer to return to Amazon as a full-time SDE, but the start date was delayed by 6 months so I am considering other opportunities in the meantime.',
   resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'food-bank.png',
+    title: 'Houston Food Bank Recipe System',
+    info: 'I led a Rice-Apps team to develop a recipe-searching app for the houston food bank.',
+    info2:
+      '​We used React and Node to allow searching/printing recipes by ingredients with support for multiple languages.',
+    url: '',
+    repo: 'https://github.com/rice-apps/hfb-recipe-sys', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'chaus.png',
+    title: 'Rice Cafe App',
+    info: 'I worked on a team at Rice to develop a web app that reports how crowded the three different cafes at Rice are.',
+    info2:
+      '​We used React and Flask, and collaborated with Rice IT to get data from the wireless access points in the cafes.',
+    url: '',
+    repo: 'https://github.com/rknightly/chaus-crowd', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'moody.png',
+    title: 'Moody Art Map',
+    info: 'I worked on a team at RiceApps to develop a mobile app to bring awareness to the public art at Rice.',
+    info2:
+      '​We used React Native and Expo to develop the app, and I focused on the Node Express backend and connected it to a content management system. I also created the map to display the art.',
+    url: '',
+    repo: 'https://github.com/rice-apps/moody', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'futures.png',
+    title: 'Futures Market Behavior Analysis',
+    info: 'I worked with a team at the Rice Data Science club to extract meaning from a large dataset about the futures market (70,000 data points with 192 features each).',
+    info2:
+      'I focused on comparing the behavior of different market players within different commodity classes. We particularly focused on the impact of the 2008 recession on the different futures markets.',
+    url: '',
+    repo: 'https://github.com/gvacaliuc/thehotcommodity/blob/master/notebooks/ryan_k-eda.ipynb', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'investorprep.png',
+    title: 'Investorprep',
+    info: 'I developed the software end of the iOS and Android application "investorPrep."',
+    info2: 'The app teaches about investing and has over 18,000 downloads.',
+    url: 'https://investorprep.weebly.com/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'flydrive.png',
+    title: 'Knighted Games',
+    info: 'I have independently written and published 14 different iOS applications as part of Knighted Games.',
+    info2:
+      'I used both Xcode/Swift and Unity/C# for development. My games together have more than 100,000 downloads.',
+    url: 'http://knightedgames.weebly.com/',
+    repo: '', // if no repo, the button will not show up
+  },
   {
     id: nanoid(),
     img: 'cell-detection.png',
@@ -51,16 +111,6 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'futures.png',
-    title: 'Futures Market Behavior Analysis',
-    info: 'I worked with a team at the Rice Data Science club to extract meaning from a large dataset about the futures market (70,000 data points with 192 features each).',
-    info2:
-      'I focused on comparing the behavior of different market players within different commodity classes. We particularly focused on the impact of the 2008 recession on the different futures markets.',
-    url: '',
-    repo: 'https://github.com/gvacaliuc/thehotcommodity/blob/master/notebooks/ryan_k-eda.ipynb', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
     img: 'marketindex.png',
     title: 'The Market Index',
     info: 'I created a stock market index called "The Market Index.',
@@ -71,42 +121,12 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'investorprep.png',
-    title: 'Investorprep',
-    info: 'I developed the software end of the iOS and Android application "investorPrep."',
-    info2:
-      'InvestorPrep is an app that aims to make learning about investing an easy and engaging process.',
-    url: 'https://investorprep.weebly.com/',
-    repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
     img: 'airsafe.png',
     title: 'AirSafe',
     info: 'I developed the AirSafe iOS application, which is part of a collaborative project involving Rice University and Technology For All.',
     info2: '​AirSafe brings live air quality data to Houston residents who need it the most.',
     url: 'https://airsafe-tfa.weebly.com/',
     repo: 'https://github.com/rknightly/airsafe-tfa', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'moody.png',
-    title: 'Moody Art Map',
-    info: 'I worked on a team at RiceApps to develop a mobile app to bring awareness to the public art at Rice.',
-    info2:
-      '​We used React Native and Expo to develop the app, and I focused on the Node Express backend and connected it to a content management system. I also created the map to display the art.',
-    url: '',
-    repo: 'https://github.com/rice-apps/moody', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'flydrive.png',
-    title: 'Knighted Games',
-    info: 'I have written and published 14 different iOS applications as part of Knighted Games.',
-    info2:
-      'I used both Xcode/Swift and Unity/C# for development. My games together have more than 65,000 downloads.',
-    url: 'http://knightedgames.weebly.com/',
-    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
