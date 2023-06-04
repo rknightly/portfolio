@@ -33,8 +33,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'cell-detection.png',
     title: 'Cell Detection',
-    info:
-      'I developed a cell detection script that automatically detects the location of cells in microscope slides.',
+    info: 'I developed a cell detection script that automatically detects the location of cells in microscope slides.',
     info2:
       'I used various filtering and processing techniques to reduce the noise in the image and used a flood-fill algorithm to generate a list of distinct cells.',
     url: '',
@@ -44,8 +43,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'mnist.png',
     title: 'Deep Learning with Python',
-    info:
-      'I performed experiments using Python and Keras regarding training sample size and the performance of classification deep neural networks. I specifically used the MNIST dataset of handwritten digits.',
+    info: 'I performed experiments using Python and Keras regarding training sample size and the performance of classification deep neural networks. I specifically used the MNIST dataset of handwritten digits.',
     info2:
       'I used the results of these experiments in writing a paper about the importance of Big Data in the age of Machine Learning.',
     url: '',
@@ -55,8 +53,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'futures.png',
     title: 'Futures Market Behavior Analysis',
-    info:
-      'I worked with a team at the Rice Data Science club to extract meaning from a large dataset about the futures market (70,000 data points with 192 features each).',
+    info: 'I worked with a team at the Rice Data Science club to extract meaning from a large dataset about the futures market (70,000 data points with 192 features each).',
     info2:
       'I focused on comparing the behavior of different market players within different commodity classes. We particularly focused on the impact of the 2008 recession on the different futures markets.',
     url: '',
@@ -86,8 +83,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'airsafe.png',
     title: 'AirSafe',
-    info:
-      'I developed the AirSafe iOS application, which is part of a collaborative project involving Rice University and Technology For All.',
+    info: 'I developed the AirSafe iOS application, which is part of a collaborative project involving Rice University and Technology For All.',
     info2: '​AirSafe brings live air quality data to Houston residents who need it the most.',
     url: 'https://airsafe-tfa.weebly.com/',
     repo: 'https://github.com/rknightly/airsafe-tfa', // if no repo, the button will not show up
@@ -96,8 +92,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'moody.png',
     title: 'Moody Art Map',
-    info:
-      'I worked on a team at RiceApps to develop a mobile app to bring awareness to the public art at Rice.',
+    info: 'I worked on a team at RiceApps to develop a mobile app to bring awareness to the public art at Rice.',
     info2:
       '​We used React Native and Expo to develop the app, and I focused on the Node Express backend and connected it to a content management system. I also created the map to display the art.',
     url: '',
@@ -117,8 +112,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'solarsim.png',
     title: 'Solar Simulator',
-    info:
-      "Solar simulator is a 3-D solar system visualization that I created using Processing. It is only one of several sketches using P5 and Processing, several of which were inspired by Daniel Shiffman's sketches.",
+    info: "Solar simulator is a 3-D solar system visualization that I created using Processing. It is only one of several sketches using P5 and Processing, several of which were inspired by Daniel Shiffman's sketches.",
     info2:
       'This visualization is designed for aesthetics, so while it is not entirely accurate astronomically, it does provide a beautiful 3-D view of the sun and the planets orbiting around it. There are also stars in the background, though they are hard to see in the screenshot.',
     url: '',
@@ -128,8 +122,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'primedice.png',
     title: 'PrimeDice Simulator',
-    info:
-      'PrimeDice Simulator is one of my first Python projects. The program tests different settings for a Bitcoin gambling site called PrimeDice.',
+    info: 'PrimeDice Simulator is one of my first Python projects. The program tests different settings for a Bitcoin gambling site called PrimeDice.',
     info2:
       '​The simulator runs millions of games using particular settings to produce a result graph like the one shown here.',
     url: '',
