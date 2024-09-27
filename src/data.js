@@ -20,11 +20,11 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.png',
   paragraphOne:
-    'Hi! I just graduated with honors from Rice University with a B.S. in Computer Science and am excited for the next chapter of my career.',
+    "Hi! I'm a software engineer at Apple and recently graduated with honors from Rice University with a B.S. in Computer Science.",
   paragraphTwo:
     'I have had the pleasure of being a Software Engineer Intern at Amazon and a Computational Biology Intern at MD Anderson. I have also worked with several Rice-Apps teams to develop both mobile and web applications for the Houston community. I have also personally developed and published over 15 mobile apps that have collectively achieved more than 125,000 downloads.',
   paragraphThree:
-    'I have accepted an offer to return to Amazon as a full-time SDE, but the start date was delayed by 6 months so I am considering other opportunities in the meantime.',
+    '',
   resume: '', // if no resume, the button will not show up
 };
 
