@@ -24,7 +24,7 @@ export const aboutData = {
   paragraphTwo:
     'I have had the pleasure of being a Software Engineer Intern at Amazon and a Computational Biology Intern at MD Anderson. I have also worked with several Rice-Apps teams to develop both mobile and web applications for the Houston community. I have also personally developed and published over 15 mobile apps that have collectively achieved more than 125,000 downloads.',
   paragraphThree:
-    '',
+    'Below is a collection of my software projects, primarily from college and earlier.',
   resume: '', // if no resume, the button will not show up
 };
 
