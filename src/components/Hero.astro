@@ -11,8 +11,27 @@ import { hero } from "../data";
       {hero.name}
     </h1>
     <p class="text-xl md:text-2xl text-gray-500 mb-8 animate-fade-in-up-delay">
-      {hero.tagline}
+      <span id="typed-tagline"></span><span id="cursor" class="text-accent">|</span>
     </p>
+
+<script define:vars={{ tagline: hero.tagline }}>
+  const el = document.getElementById("typed-tagline");
+  const cursor = document.getElementById("cursor");
+  let i = 0;
+  const delay = 800; // wait for fade-in animation
+
+  setTimeout(() => {
+    const interval = setInterval(() => {
+      el.textContent = tagline.slice(0, i + 1);
+      i++;
+      if (i >= tagline.length) {
+        clearInterval(interval);
+        // Blink cursor then hide
+        setTimeout(() => cursor.style.display = "none", 2000);
+      }
+    }, 60);
+  }, delay);
+</script>
     <a
       href="#about"
       class="inline-block border-2 border-accent text-accent px-8 py-3 rounded-lg hover:bg-accent hover:text-white transition-colors animate-fade-in-up-delay"

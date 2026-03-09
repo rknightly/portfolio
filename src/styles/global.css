@@ -40,3 +40,12 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Blinking cursor for typing animation */
+#cursor {
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
