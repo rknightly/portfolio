@@ -15,11 +15,7 @@ import { experience } from "../data";
             </div>
             <span class="text-sm text-gray-400">{exp.period}</span>
           </div>
-          <ul class="text-gray-600 space-y-1">
-            {exp.bullets.map((b) => (
-              <li class="leading-relaxed">{b}</li>
-            ))}
-          </ul>
+          <p class="text-gray-600 leading-relaxed">{exp.summary}</p>
         </div>
       ))}
     </div>

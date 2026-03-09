@@ -11,7 +11,7 @@ export interface Experience {
   company: string;
   role: string;
   period: string;
-  bullets: string[];
+  summary: string;
 }
 
 export interface Social {
@@ -22,16 +22,14 @@ export interface Social {
 
 export const hero = {
   name: "Ryan Knightly",
-  title: "Software Engineer",
-  tagline: "Building software that makes a difference.",
+  tagline: "Software Engineer @ Apple",
 };
 
 export const about = {
   image: "/images/profile.png",
   paragraphs: [
-    "I'm a software engineer at Apple and recently graduated with honors from Rice University with a B.S. in Computer Science.",
-    "I have had the pleasure of being a Software Engineer Intern at Amazon and a Computational Biology Intern at MD Anderson. I have also worked with several Rice Apps teams to develop both mobile and web applications for the Houston community.",
-    "Below is a collection of my software projects, primarily from college and earlier.",
+    "I'm a software engineer at Apple, where I build native macOS apps in Swift that power Apple's CRM workflows. I design and ship features end-to-end, and build foundational frameworks used by teams across the organization.",
+    "I've been shipping software since high school, when I published my first iOS games on the App Store. I went on to study Computer Science and Mathematics at Rice University, graduating magna cum laude, and interned at Amazon before joining Apple.",
   ],
 };
 
@@ -39,37 +37,45 @@ export const experience: Experience[] = [
   {
     company: "Apple",
     role: "Software Engineer",
-    period: "2021 - Present",
-    bullets: [
-      "Working as a full-time software engineer.",
-    ],
+    period: "Aug 2023 - Present",
+    summary: "Build native macOS apps in Swift that power Apple's CRM workflows. Notable projects include on-device speech transcription, a real-time WebSocket notification system, and an internal AI assistant application. I also build and maintain foundational Swift frameworks used across multiple teams.",
   },
   {
     company: "Amazon",
     role: "Software Engineer Intern",
-    period: "Summer 2020",
-    bullets: [
-      "Worked as a software engineer intern on an internal tools team.",
-    ],
+    period: "May - Aug 2022",
+    summary: "Designed and implemented a Swift framework for a new Alexa Accessories feature on iOS, integrating with AWS backends and multithreaded native APIs.",
   },
   {
     company: "MD Anderson Cancer Center",
     role: "Computational Biology Intern",
-    period: "Summer 2019",
-    bullets: [
-      "Developed computational biology tools and analysis pipelines.",
-    ],
-  },
-  {
-    company: "Rice Apps",
-    role: "Team Lead",
-    period: "2018 - 2021",
-    bullets: [
-      "Led teams to develop web and mobile applications for the Houston community.",
-      "Projects included the Houston Food Bank Recipe System and Moody Art Map.",
-    ],
+    period: "Jun - Aug 2021",
+    summary: "Built a Python web application to visualize high-dimensional lung cancer data and developed a statistical gene-correlation tool used by experimental biologists.",
   },
 ];
+
+export const education = {
+  school: "Rice University",
+  degree: "B.S. in Computer Science, Minor in Mathematics",
+  honors: "Magna Cum Laude",
+  courses: [
+    "Web Development",
+    "Databases",
+    "Secure and Cloud Computing",
+    "Statistical Models for Data Science",
+    "Functional Programming",
+    "Cryptography",
+    "Compiler Construction",
+    "Operating Systems",
+    "Parallel Programming",
+    "Distributed Systems",
+  ],
+};
+
+export const skills = {
+  languages: ["Swift", "Python", "TypeScript", "JavaScript", "Java", "SQL", "C"],
+  technologies: ["SwiftUI", "AppKit", "Vue.js", "React", "Node.js", "Unity", "Git", "Docker", "AWS", "GCP"],
+};
 
 export const projects: Project[] = [
   {
@@ -102,7 +108,7 @@ export const projects: Project[] = [
   },
   {
     title: "Investorprep",
-    description: "Developed the software for the iOS and Android application investorPrep.",
+    description: "Built the iOS and Android app investorPrep.",
     detail: "The app teaches about investing and has over 18,000 downloads.",
     image: "/images/investorprep.png",
     url: "https://investorprep.weebly.com/",
@@ -146,15 +152,15 @@ export const projects: Project[] = [
   },
   {
     title: "Solar Simulator",
-    description: "A 3-D solar system visualization created using Processing.",
-    detail: "Designed for aesthetics, providing a beautiful 3-D view of the sun and planets orbiting around it with stars in the background.",
+    description: "Built a 3-D solar system visualization using Processing.",
+    detail: "Designed for aesthetics, rendering the sun, orbiting planets, and a starfield background in real time.",
     image: "/images/solarsim.png",
     repo: "https://github.com/rknightly/sketches/tree/master/processing/solarSim",
   },
   {
     title: "PrimeDice Simulator",
-    description: "A Python program that tests different settings for a Bitcoin gambling site.",
-    detail: "The simulator runs millions of games using particular settings to produce a result graph.",
+    description: "A Python probability simulation tool that models outcomes across different betting strategies.",
+    detail: "Runs millions of simulated games with configurable parameters to produce result graphs.",
     image: "/images/primedice.png",
     repo: "https://github.com/rknightly/primedice-simulator",
   },
@@ -163,7 +169,7 @@ export const projects: Project[] = [
 export const social: Social[] = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/ryaneknightly/",
+    url: "https://www.linkedin.com/in/reknightly/",
     icon: "linkedin",
   },
   {
