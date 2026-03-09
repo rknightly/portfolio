@@ -1,0 +1,67 @@
+---
+const links = [
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+];
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+  <div class="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="#" class="text-lg font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
+      RK
+    </a>
+
+    <!-- Desktop links -->
+    <div class="hidden md:flex gap-8">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+
+    <!-- Mobile hamburger button -->
+    <button
+      id="menu-toggle"
+      class="md:hidden flex flex-col gap-1.5 p-2"
+      aria-label="Toggle menu"
+    >
+      <span class="block w-5 h-0.5 bg-gray-700 transition-all" id="bar1"></span>
+      <span class="block w-5 h-0.5 bg-gray-700 transition-all" id="bar2"></span>
+      <span class="block w-5 h-0.5 bg-gray-700 transition-all" id="bar3"></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white">
+    <div class="px-6 py-4 flex flex-col gap-4">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          class="mobile-link text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  toggle?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+  });
+
+  document.querySelectorAll(".mobile-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu?.classList.add("hidden");
+    });
+  });
+</script>

@@ -1,0 +1,27 @@
+---
+import { experience } from "../data";
+---
+
+<section id="experience" class="py-24">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12 reveal">Experience</h2>
+    <div class="space-y-8">
+      {experience.map((exp) => (
+        <div class="reveal border-l-4 border-indigo-600 pl-6">
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <div>
+              <h3 class="text-xl font-semibold">{exp.company}</h3>
+              <p class="text-indigo-600 font-medium">{exp.role}</p>
+            </div>
+            <span class="text-sm text-gray-400">{exp.period}</span>
+          </div>
+          <ul class="text-gray-600 space-y-1">
+            {exp.bullets.map((b) => (
+              <li class="leading-relaxed">{b}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

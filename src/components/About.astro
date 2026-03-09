@@ -1,0 +1,24 @@
+---
+import { about } from "../data";
+---
+
+<section id="about" class="py-24 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-12 reveal">About Me</h2>
+    <div class="flex flex-col md:flex-row gap-12 items-center">
+      <div class="w-48 h-48 flex-shrink-0 reveal">
+        <img
+          src={about.image}
+          alt="Ryan Knightly"
+          class="w-full h-full object-cover rounded-full shadow-lg"
+          loading="lazy"
+        />
+      </div>
+      <div class="reveal">
+        {about.paragraphs.map((p) => (
+          <p class="text-gray-600 mb-4 leading-relaxed">{p}</p>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
