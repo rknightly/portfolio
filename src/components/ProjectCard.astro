@@ -8,7 +8,7 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<div class="group bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+<div class="group bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg hover:shadow-accent/20 transition-all duration-300">
   <div class="aspect-video overflow-hidden bg-gray-100">
     <img
       src={project.image}
@@ -27,7 +27,7 @@ const { project } = Astro.props;
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-sm text-indigo-600 hover:text-indigo-800 font-medium transition-colors"
+          class="text-sm text-accent hover:text-accent-hover font-medium transition-colors"
         >
           Visit Site &rarr;
         </a>

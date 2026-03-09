@@ -9,7 +9,7 @@ const links = [
 
 <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
   <div class="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
-    <a href="#" class="text-lg font-semibold text-gray-900 hover:text-indigo-600 transition-colors">
+    <a href="#" class="text-lg font-semibold text-accent hover:text-accent-hover transition-colors">
       RK
     </a>
 
@@ -18,7 +18,7 @@ const links = [
       {links.map((link) => (
         <a
           href={link.href}
-          class="text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+          class="text-sm text-gray-600 hover:text-accent transition-colors"
         >
           {link.label}
         </a>
@@ -43,7 +43,7 @@ const links = [
       {links.map((link) => (
         <a
           href={link.href}
-          class="mobile-link text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+          class="mobile-link text-sm text-gray-600 hover:text-accent transition-colors"
         >
           {link.label}
         </a>
