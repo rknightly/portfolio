@@ -1,41 +1,25 @@
 ---
-import { projects } from "../data";
+import { featuredProjects } from "../data";
 import ProjectCard from "./ProjectCard.astro";
 ---
 
 <section id="projects" class="py-24 bg-gray-50">
   <div class="max-w-5xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-12 reveal">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
-      {projects.map((project, i) => (
-        <div class:list={["reveal", { "project-extra hidden": i >= 6 }]}>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {featuredProjects.map((project) => (
+        <div class="reveal">
           <ProjectCard project={project} />
         </div>
       ))}
     </div>
-    {projects.length > 6 && (
-      <div class="text-center mt-10">
-        <button
-          id="show-more-btn"
-          class="border-2 border-accent text-accent px-6 py-2 rounded-lg hover:bg-accent hover:text-white transition-colors text-sm font-medium"
-        >
-          Show more projects
-        </button>
-      </div>
-    )}
+    <div class="text-center mt-10 reveal">
+      <a
+        href="/projects"
+        class="border-2 border-accent text-accent px-6 py-2 rounded-lg hover:bg-accent hover:text-white transition-colors text-sm font-medium"
+      >
+        View all projects
+      </a>
+    </div>
   </div>
 </section>
-
-<script>
-  const btn = document.getElementById("show-more-btn");
-  const extras = document.querySelectorAll(".project-extra");
-
-  btn?.addEventListener("click", () => {
-    extras.forEach((el) => {
-      el.classList.remove("hidden");
-      // Trigger reveal animation
-      requestAnimationFrame(() => el.classList.add("visible"));
-    });
-    btn.remove();
-  });
-</script>

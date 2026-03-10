@@ -15,7 +15,7 @@ import { experience } from "../data";
             </div>
             <span class="text-sm text-gray-400">{exp.period}</span>
           </div>
-          <p class="text-gray-600 leading-relaxed">{exp.summary}</p>
+          <p class="text-gray-600 leading-relaxed" set:html={exp.summary} />
         </div>
       ))}
     </div>

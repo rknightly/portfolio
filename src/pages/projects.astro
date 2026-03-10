@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import Footer from "../components/Footer.astro";
+import { featuredProjects, archiveProjects } from "../data";
+import "../styles/global.css";
+
+const allProjects = [...featuredProjects, ...archiveProjects];
+---
+
+<Layout
+  title="Projects | Ryan Knightly"
+  description="A full archive of Ryan Knightly's software projects."
+>
+  <Nav />
+  <main class="pt-24 pb-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="mb-8">
+        <a href="/" class="text-sm text-accent hover:text-accent-hover transition-colors">&larr; Back home</a>
+      </div>
+      <h1 class="text-3xl font-bold mb-3">Project Archive</h1>
+      <p class="text-gray-500 mb-12">A collection of personal and academic projects from over the years. My professional work from Apple and prior companies is not included here.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {allProjects.map((project) => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

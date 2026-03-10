@@ -1,5 +1,5 @@
 ---
-import { hero } from "../data";
+import { hero, social, socialIcons } from "../data";
 ---
 
 <section id="hero" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
@@ -39,5 +39,17 @@ import { hero } from "../data";
     >
       Learn more
     </a>
+    <div class="flex justify-center gap-5 mt-8 animate-fade-in-up-delay">
+      {social.map((s) => (
+        <a
+          href={s.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={s.name}
+          class="text-gray-400 hover:text-accent transition-colors"
+          set:html={socialIcons[s.icon]}
+        />
+      ))}
+    </div>
   </div>
 </section>
